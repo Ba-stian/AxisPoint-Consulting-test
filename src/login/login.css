@@ -1,0 +1,47 @@
+.login {
+	width: 60%;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.form {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.input {
+	border: none;
+	outline: none;
+	margin: 10px 0;
+	border-radius: 15px;
+	padding: 5px 15px;
+}
+
+.btn {
+	width: 40%;
+	margin-top: 25px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	padding: 8px 0;
+	border-radius: 15px;
+	align-self: center;
+}
+
+.btn:hover {
+	box-shadow: inset 0 0 6px 2px #666;
+}
+
+.label {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 0 15px;
+}
+
+.error {
+	color: #f00;
+	font-size: 14px;
+}
