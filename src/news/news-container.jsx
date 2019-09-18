@@ -13,6 +13,7 @@ class NewsContainer extends Component {
 	fetchNews() {
 		const randStart = Math.floor(Math.random() * 230);
 		const news = mockdata.splice(randStart, 21);
+		// eslint-disable-next-line react/destructuring-assignment
 		this.props.requestNews(news);
 	}
 
@@ -28,6 +29,7 @@ class NewsContainer extends Component {
 
 NewsContainer.propTypes = {
 	news: PropTypes.arrayOf(PropTypes.any.isRequired).isRequired,
+	requestNews: PropTypes.func.isRequired,
 };
 
 
