@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
-import userLogged from '../actions';
+import { userLogged } from '../actions';
 import style from './login.css';
 
 class Login extends Component {
@@ -40,11 +40,11 @@ class Login extends Component {
 	validateUser() {
 		const { login, password } = this.state;
 		const { history } = this.props;
-		if (login !== 'Admin' && password !== '12345') {
-			this.setState({ error: 'Имя пользователя или пароль введены не верно ' });
-		} else {
+		if (login === 'Admin' && password === '12345') {
 			localStorage.setItem('isLogged', 'true');
 			history.push('/profile');
+		} else {
+			this.setState({ error: 'Имя пользователя или пароль введены не верно ' });
 		}
 	}
 

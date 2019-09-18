@@ -1,0 +1,10 @@
+.app {
+	font-family: Helvetica, sans-serif;
+	background: #676767;
+	min-height: 1000px;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
